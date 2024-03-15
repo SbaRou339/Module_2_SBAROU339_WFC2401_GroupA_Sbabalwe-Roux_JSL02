@@ -24,11 +24,17 @@ const addNewGoal = () => {
     
     // ⚠️ Hint 1: Check for duplicates
     // Use 'goalList' to get all existing goals and check if 'goalInput' matches any of them.
-    
+    const existingGoals = Array.from(goalList.querySelectorAll('li')); // Get existing goals
+    const isDuplicate = existingGoals.some(goal => goal.textContent.trim() === goalInput.trim());
+
     // ⚠️ Hint 2: Prevent duplicates
     // If a duplicate is found, display an alert to the user and don't add the goal to the list.
     // If it's not a duplicate, proceed with adding it as a new goal.
-    
+    if (isDuplicate) {
+        alert('Goal already exists.'); // Display an alert if the goal already exists
+        return; // Exit the function early if it's a duplicate
+    }
+
     // ⚠️ Hint 3: Code structure
     // You might want to wrap the duplicate-checking logic in an 'if' statement.
     
