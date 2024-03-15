@@ -6,4 +6,4 @@ In the current code, users can add the same fitness goal multiple times, leading
 
 # Challenges
 
-Figuring out how to correctly extract the node list and turn it into an array list to be able to access it with its content for comparison and ensuring that the would be no duplicates thereof.
+Figuring out how to correctly extract the node list and turn it into an array list to be able to access it with its content for comparison and ensuring that the would be no duplicates thereof. 
